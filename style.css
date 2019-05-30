@@ -1,0 +1,144 @@
+body {
+    background-color: #000;
+    margin: 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p,
+  li {
+    color: #fff;
+    font-family: "Heebo", sans-serif;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 7vh;
+    font-weight: 900;
+  }
+  
+  h2 {
+    font-size: 4vh;
+  }
+  
+  h3 {
+    font-size: 3vh;
+  }
+  
+  ul li {
+    list-style-type: disc;
+  }
+  
+  p, a, li {
+      font-weight: 500;
+      font-size: 3vh;
+  }
+
+  a:hover {
+    color: #99bfff;
+  }
+  
+  img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+
+  .imageCaption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    font-size: 3vh;
+    padding: 5%;
+    overflow: scroll;
+    transition: 0.25s;
+    opacity: 0;
+  }
+
+  .imageCaption:hover {
+    opacity: 1;
+  }
+  
+  video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+  }
+ 
+  .squareBox {
+      /* width: 100%; */
+      height: 0;
+      padding-top: 100%;
+      position: relative;
+  }
+  
+  .page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+  }
+
+  .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .fd-col {
+      flex-direction: column;
+  }
+
+  .fd-row {
+      flex-direction: row;
+  }
+
+  .font18 {
+      font-size: 18px;
+  }
+
+  .bordered {
+      border: 5px solid #fff;
+  }
+
+  .padding5 {
+      padding: 5%;
+  }
+
+  .absolute {
+      position: absolute;
+  }
+
+  .centertext {
+      text-align: center;
+  }
+
+  .inline {
+      display: inline;
+  }
+  
+  @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 4vh;
+      }
+      h2 {
+        font-size: 3vh;
+      }
+      p,
+      a,
+      li {
+        font-size: 12pt;
+      }
+    }

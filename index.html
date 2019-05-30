@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <title>Ali Galvan Beauty</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo:500,700,900" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar is-fixed-top">
+        <div class="navbar-brand">
+            <a href="#home" class="navbar-item">Ali Galvan</a>
+            <a role="button" class="navbar-burger burger" data-target="navMenu" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id='navMenu'>
+            <div class="navbar-end">
+                <a href='#home' class="navbar-item font18">home</a>
+                <a href='#portfolio' class="navbar-item font18">portfolio</a>
+                <a href="#book" class="navbar-item font18">book</a>
+                <a href="#contact" class="navbar-item font18">contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-fullheight" id='home'>
+        <video autoplay muted loop id="myVideo">
+            <source src="stockvideo.mp4" type="video/mp4">
+        </video>
+        <div class="hero-body">
+            <div class="container is-fluid page center">
+                <div class="center fd-col bordered" style='padding: 2.5vw;'>
+                    <h1 class="inline">Ali Galvan Beauty</h1>
+                    <p class="inline">freelance makeup artist</p>
+                </div>
+            </div>
+        </div>
+        <div class="center absolute" style='bottom: 5vh; width: 100%;'>
+            <svg style="width:50px;height:50px;text-align:center" viewBox="0 0 24 24">
+                <path fill="#fff" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+            </svg>
+        </div>
+    </section>
+    <section class="hero is-fullheight" id='portfolio'>
+        <div class="hero-body">
+            <div class="container is-fluid page">
+                <h1>portfolio</h1>
+                <div id='portfolioContainer'>
+                </div>
+                <div class="center padding5" id='buttonContainer'>
+                    <button class="button is-white is-medium" id='loadMoreButton'>Load More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero is-fullheight" id='book'>
+        <div class="hero-body">
+            <div class="container is-fluid page">
+                <h1>book an appointment</h1>
+                <div class="center">
+                    <!-- Start Square Appointments Embed Code -->
+                    <script
+                        src='https://square.site/appointments/buyer/widget/eyf26qg62vd9x9/FXFHESAE59KJ8.js'></script>
+                    <!-- End Square Appointments EmbedCode -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="twitterFetcher.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
