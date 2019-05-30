@@ -2,27 +2,33 @@ let imagePairSets = [];
 const isMobile = window.innerWidth < 1024;
 let setsShown = 0;
 const portfolio = document.getElementById('portfolioContainer');
-const twitterUsername = 'kaitlin_kahler';
+const twitterUsername = 'Galvan_Beauty';
 
 
 function dataHandler(data) {
-
+    console.log(data)
     let imagePairs = [];
     for (let item of data) {
-        if ("images" in item && !!item.images && "tweet" in item && !!item.tweet) {
-            item.images.forEach(imageURL => imagePairs.push([imageURL, item.tweet]));
+        if ("images" in item && !!item.images) {
+            if("tweet" in item && !!item.tweet){
+                item.images.forEach(imageURL => imagePairs.push([imageURL, item.tweet]));
+            } else {
+                item.images.forEach(imageURL => imagePairs.push([imageURL, '']));
+            }
         }
     }
 
 
     let x = [];
+    let index = 1;
     for (let pair of imagePairs) {
         x.push(pair);
-        if (x.length === 3) {
+        if (x.length === 3 || imagePairs.length === index) {
             const y = [...x];
             x = [];
             imagePairSets.push(y);
         }
+        index++;
     }
 
     initialImageConstructor()
